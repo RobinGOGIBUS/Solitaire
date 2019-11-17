@@ -1,0 +1,81 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Solitaire.GUI
+</name>
+</assembly>
+<members>
+<member name="T:Solitaire.GUI.My.Resources.Resources">
+<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member>
+<member name="P:Solitaire.GUI.My.Resources.Resources.ResourceManager">
+<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member>
+<member name="P:Solitaire.GUI.My.Resources.Resources.Culture">
+<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member>
+<member name="P:Solitaire.GUI.My.Resources.Resources.bulle">
+<summary>
+  Recherche une ressource localisée de type System.IO.UnmanagedMemoryStream semblable à System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:Solitaire.GUI.My.Resources.Resources.clic">
+<summary>
+  Recherche une ressource localisée de type System.IO.UnmanagedMemoryStream semblable à System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:Solitaire.GUI.My.Resources.Resources.deplacer">
+<summary>
+  Recherche une ressource localisée de type System.IO.UnmanagedMemoryStream semblable à System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:Solitaire.GUI.My.Resources.Resources.distribuer">
+<summary>
+  Recherche une ressource localisée de type System.IO.UnmanagedMemoryStream semblable à System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:Solitaire.GUI.My.Resources.Resources.erreur">
+<summary>
+  Recherche une ressource localisée de type System.IO.UnmanagedMemoryStream semblable à System.IO.MemoryStream.
+</summary>
+</member>
+<member name="P:Solitaire.GUI.My.Resources.Resources.Fond">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Solitaire.GUI.My.Resources.Resources.fond_plateau">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Solitaire.GUI.My.Resources.Resources.FondO">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Solitaire.GUI.My.Resources.Resources.FondVierge">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Solitaire.GUI.My.Resources.Resources.FondX">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Solitaire.GUI.My.Resources.Resources.piocher">
+<summary>
+  Recherche une ressource localisée de type System.IO.UnmanagedMemoryStream semblable à System.IO.MemoryStream.
+</summary>
+</member>
+</members>
+</doc>

@@ -1,0 +1,93 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29324.140
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Solitaire.GUI", "Solitaire.GUI\Solitaire.GUI.vbproj", "{8BF73E3C-C863-4E77-8911-2E3393B3FEA8}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Solitaire.Modele", "Solitaire.Modele\Solitaire.Modele.vbproj", "{1162FC4A-9A3A-4602-B829-06CA1EBF6CF2}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Solitaire.Application", "Solitaire.Application\Solitaire.Application.vbproj", "{C260C02A-5FFD-43C3-A89A-8040B3DD67CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8BF73E3C-C863-4E77-8911-2E3393B3FEA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BF73E3C-C863-4E77-8911-2E3393B3FEA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BF73E3C-C863-4E77-8911-2E3393B3FEA8}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{8BF73E3C-C863-4E77-8911-2E3393B3FEA8}.Debug|ARM.Build.0 = Debug|Any CPU
+		{8BF73E3C-C863-4E77-8911-2E3393B3FEA8}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{8BF73E3C-C863-4E77-8911-2E3393B3FEA8}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{8BF73E3C-C863-4E77-8911-2E3393B3FEA8}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8BF73E3C-C863-4E77-8911-2E3393B3FEA8}.Debug|x64.Build.0 = Debug|Any CPU
+		{8BF73E3C-C863-4E77-8911-2E3393B3FEA8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8BF73E3C-C863-4E77-8911-2E3393B3FEA8}.Debug|x86.Build.0 = Debug|Any CPU
+		{8BF73E3C-C863-4E77-8911-2E3393B3FEA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BF73E3C-C863-4E77-8911-2E3393B3FEA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BF73E3C-C863-4E77-8911-2E3393B3FEA8}.Release|ARM.ActiveCfg = Release|Any CPU
+		{8BF73E3C-C863-4E77-8911-2E3393B3FEA8}.Release|ARM.Build.0 = Release|Any CPU
+		{8BF73E3C-C863-4E77-8911-2E3393B3FEA8}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{8BF73E3C-C863-4E77-8911-2E3393B3FEA8}.Release|ARM64.Build.0 = Release|Any CPU
+		{8BF73E3C-C863-4E77-8911-2E3393B3FEA8}.Release|x64.ActiveCfg = Release|Any CPU
+		{8BF73E3C-C863-4E77-8911-2E3393B3FEA8}.Release|x64.Build.0 = Release|Any CPU
+		{8BF73E3C-C863-4E77-8911-2E3393B3FEA8}.Release|x86.ActiveCfg = Release|Any CPU
+		{8BF73E3C-C863-4E77-8911-2E3393B3FEA8}.Release|x86.Build.0 = Release|Any CPU
+		{1162FC4A-9A3A-4602-B829-06CA1EBF6CF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1162FC4A-9A3A-4602-B829-06CA1EBF6CF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1162FC4A-9A3A-4602-B829-06CA1EBF6CF2}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{1162FC4A-9A3A-4602-B829-06CA1EBF6CF2}.Debug|ARM.Build.0 = Debug|Any CPU
+		{1162FC4A-9A3A-4602-B829-06CA1EBF6CF2}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{1162FC4A-9A3A-4602-B829-06CA1EBF6CF2}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{1162FC4A-9A3A-4602-B829-06CA1EBF6CF2}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1162FC4A-9A3A-4602-B829-06CA1EBF6CF2}.Debug|x64.Build.0 = Debug|Any CPU
+		{1162FC4A-9A3A-4602-B829-06CA1EBF6CF2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1162FC4A-9A3A-4602-B829-06CA1EBF6CF2}.Debug|x86.Build.0 = Debug|Any CPU
+		{1162FC4A-9A3A-4602-B829-06CA1EBF6CF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1162FC4A-9A3A-4602-B829-06CA1EBF6CF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1162FC4A-9A3A-4602-B829-06CA1EBF6CF2}.Release|ARM.ActiveCfg = Release|Any CPU
+		{1162FC4A-9A3A-4602-B829-06CA1EBF6CF2}.Release|ARM.Build.0 = Release|Any CPU
+		{1162FC4A-9A3A-4602-B829-06CA1EBF6CF2}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{1162FC4A-9A3A-4602-B829-06CA1EBF6CF2}.Release|ARM64.Build.0 = Release|Any CPU
+		{1162FC4A-9A3A-4602-B829-06CA1EBF6CF2}.Release|x64.ActiveCfg = Release|Any CPU
+		{1162FC4A-9A3A-4602-B829-06CA1EBF6CF2}.Release|x64.Build.0 = Release|Any CPU
+		{1162FC4A-9A3A-4602-B829-06CA1EBF6CF2}.Release|x86.ActiveCfg = Release|Any CPU
+		{1162FC4A-9A3A-4602-B829-06CA1EBF6CF2}.Release|x86.Build.0 = Release|Any CPU
+		{C260C02A-5FFD-43C3-A89A-8040B3DD67CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C260C02A-5FFD-43C3-A89A-8040B3DD67CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C260C02A-5FFD-43C3-A89A-8040B3DD67CB}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{C260C02A-5FFD-43C3-A89A-8040B3DD67CB}.Debug|ARM.Build.0 = Debug|Any CPU
+		{C260C02A-5FFD-43C3-A89A-8040B3DD67CB}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{C260C02A-5FFD-43C3-A89A-8040B3DD67CB}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{C260C02A-5FFD-43C3-A89A-8040B3DD67CB}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C260C02A-5FFD-43C3-A89A-8040B3DD67CB}.Debug|x64.Build.0 = Debug|Any CPU
+		{C260C02A-5FFD-43C3-A89A-8040B3DD67CB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C260C02A-5FFD-43C3-A89A-8040B3DD67CB}.Debug|x86.Build.0 = Debug|Any CPU
+		{C260C02A-5FFD-43C3-A89A-8040B3DD67CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C260C02A-5FFD-43C3-A89A-8040B3DD67CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C260C02A-5FFD-43C3-A89A-8040B3DD67CB}.Release|ARM.ActiveCfg = Release|Any CPU
+		{C260C02A-5FFD-43C3-A89A-8040B3DD67CB}.Release|ARM.Build.0 = Release|Any CPU
+		{C260C02A-5FFD-43C3-A89A-8040B3DD67CB}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{C260C02A-5FFD-43C3-A89A-8040B3DD67CB}.Release|ARM64.Build.0 = Release|Any CPU
+		{C260C02A-5FFD-43C3-A89A-8040B3DD67CB}.Release|x64.ActiveCfg = Release|Any CPU
+		{C260C02A-5FFD-43C3-A89A-8040B3DD67CB}.Release|x64.Build.0 = Release|Any CPU
+		{C260C02A-5FFD-43C3-A89A-8040B3DD67CB}.Release|x86.ActiveCfg = Release|Any CPU
+		{C260C02A-5FFD-43C3-A89A-8040B3DD67CB}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {86AEE1FE-CC4E-4970-9759-EAAF58D7DE59}
+	EndGlobalSection
+EndGlobal
