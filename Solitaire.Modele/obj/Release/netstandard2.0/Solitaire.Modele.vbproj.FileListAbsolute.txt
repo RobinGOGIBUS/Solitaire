@@ -1,0 +1,7 @@
+D:\projets\solitaire\solitaire\Solitaire.Modele\bin\Release\netstandard2.0\Solitaire.Modele.deps.json
+D:\projets\solitaire\solitaire\Solitaire.Modele\bin\Release\netstandard2.0\Solitaire.Modele.dll
+D:\projets\solitaire\solitaire\Solitaire.Modele\bin\Release\netstandard2.0\Solitaire.Modele.pdb
+D:\projets\solitaire\solitaire\Solitaire.Modele\obj\Release\netstandard2.0\Solitaire.Modele.AssemblyInfoInputs.cache
+D:\projets\solitaire\solitaire\Solitaire.Modele\obj\Release\netstandard2.0\Solitaire.Modele.AssemblyInfo.vb
+D:\projets\solitaire\solitaire\Solitaire.Modele\obj\Release\netstandard2.0\Solitaire.Modele.dll
+D:\projets\solitaire\solitaire\Solitaire.Modele\obj\Release\netstandard2.0\Solitaire.Modele.pdb

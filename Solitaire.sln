@@ -5,9 +5,11 @@ VisualStudioVersion = 16.0.29324.140
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Solitaire.GUI", "Solitaire.GUI\Solitaire.GUI.vbproj", "{8BF73E3C-C863-4E77-8911-2E3393B3FEA8}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Solitaire.Modele", "Solitaire.Modele\Solitaire.Modele.vbproj", "{1162FC4A-9A3A-4602-B829-06CA1EBF6CF2}"
+Project("{778DAE3C-4631-46EA-AA77-85C1314464D9}") = "Solitaire.Modele", "Solitaire.Modele\Solitaire.Modele.vbproj", "{1162FC4A-9A3A-4602-B829-06CA1EBF6CF2}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Solitaire.Application", "Solitaire.Application\Solitaire.Application.vbproj", "{C260C02A-5FFD-43C3-A89A-8040B3DD67CB}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Solitaire.Setup", "Solitaire.Setup\Solitaire.Setup.vdproj", "{53DE9A60-8DDB-47BD-A682-608349A4A93A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -83,6 +85,16 @@ Global
 		{C260C02A-5FFD-43C3-A89A-8040B3DD67CB}.Release|x64.Build.0 = Release|Any CPU
 		{C260C02A-5FFD-43C3-A89A-8040B3DD67CB}.Release|x86.ActiveCfg = Release|Any CPU
 		{C260C02A-5FFD-43C3-A89A-8040B3DD67CB}.Release|x86.Build.0 = Release|Any CPU
+		{53DE9A60-8DDB-47BD-A682-608349A4A93A}.Debug|Any CPU.ActiveCfg = Debug
+		{53DE9A60-8DDB-47BD-A682-608349A4A93A}.Debug|ARM.ActiveCfg = Debug
+		{53DE9A60-8DDB-47BD-A682-608349A4A93A}.Debug|ARM64.ActiveCfg = Debug
+		{53DE9A60-8DDB-47BD-A682-608349A4A93A}.Debug|x64.ActiveCfg = Debug
+		{53DE9A60-8DDB-47BD-A682-608349A4A93A}.Debug|x86.ActiveCfg = Debug
+		{53DE9A60-8DDB-47BD-A682-608349A4A93A}.Release|Any CPU.ActiveCfg = Release
+		{53DE9A60-8DDB-47BD-A682-608349A4A93A}.Release|ARM.ActiveCfg = Release
+		{53DE9A60-8DDB-47BD-A682-608349A4A93A}.Release|ARM64.ActiveCfg = Release
+		{53DE9A60-8DDB-47BD-A682-608349A4A93A}.Release|x64.ActiveCfg = Release
+		{53DE9A60-8DDB-47BD-A682-608349A4A93A}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

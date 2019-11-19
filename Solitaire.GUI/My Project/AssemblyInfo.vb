@@ -8,11 +8,11 @@ Imports System.Runtime.InteropServices
 
 ' Vérifiez les valeurs des attributs de l'assembly
 
-<Assembly: AssemblyTitle("Solitaire.GUI")>
+<Assembly: AssemblyTitle("Solitaire")>
 <Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("HP Inc.")>
-<Assembly: AssemblyProduct("Solitaire.GUI")>
-<Assembly: AssemblyCopyright("Copyright © HP Inc. 2019")>
+<Assembly: AssemblyCompany("None")>
+<Assembly: AssemblyProduct("Solitaire")>
+<Assembly: AssemblyCopyright("Copyright © 2019")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' en utilisant '*', comme indiqué ci-dessous :
 ' <Assembly: AssemblyVersion("1.0.*")>
 
-<Assembly: AssemblyVersion("1.0.0.0")>
-<Assembly: AssemblyFileVersion("1.0.0.0")>
+<Assembly: AssemblyVersion("0.3.0.0")>
+<Assembly: AssemblyFileVersion("0.3.0.0")>

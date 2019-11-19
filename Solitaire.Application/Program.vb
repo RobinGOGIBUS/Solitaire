@@ -11,9 +11,9 @@ Namespace App
 
         <STAThread()>
         Public Shared Sub Main()
-            System.Windows.Forms.Application.EnableVisualStyles()
-            System.Windows.Forms.Application.SetCompatibleTextRenderingDefault(False)
-            System.Windows.Forms.Application.Run(New SolitaireForm)
+            Application.EnableVisualStyles()
+            Application.SetCompatibleTextRenderingDefault(False)
+            Application.Run(New SolitaireForm)
         End Sub
 
     End Class

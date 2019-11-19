@@ -1,5 +1,4 @@
-﻿Imports System.Drawing
-Imports Solitaire.GUI.Controleur
+﻿Imports Solitaire.GUI.Controleur
 Imports Solitaire.Modele
 Imports Solitaire.Modele.Modele
 Imports Transitions
