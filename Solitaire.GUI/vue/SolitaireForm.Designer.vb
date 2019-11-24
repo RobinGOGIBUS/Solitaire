@@ -27,9 +27,10 @@
             Me.MenuSolitaire = New System.Windows.Forms.MenuStrip()
             Me.JeuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
             Me.MenuItemNewGame = New System.Windows.Forms.ToolStripMenuItem()
-            Me.SauvegarderLeJeuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+            Me.SauverLaPartieToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
             Me.ChargerLeJeuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
             Me.MenuItemQuit = New System.Windows.Forms.ToolStripMenuItem()
+            Me.SauverPartieSousToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
             Me.PlateauPanel = New System.Windows.Forms.Panel()
             Me.MenuSolitaire.SuspendLayout()
             Me.SuspendLayout()
@@ -47,7 +48,7 @@
             '
             'JeuToolStripMenuItem
             '
-            Me.JeuToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuItemNewGame, Me.SauvegarderLeJeuToolStripMenuItem, Me.ChargerLeJeuToolStripMenuItem, Me.MenuItemQuit})
+            Me.JeuToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuItemNewGame, Me.SauverPartieSousToolStripMenuItem, Me.SauverLaPartieToolStripMenuItem, Me.ChargerLeJeuToolStripMenuItem, Me.MenuItemQuit})
             Me.JeuToolStripMenuItem.Name = "JeuToolStripMenuItem"
             Me.JeuToolStripMenuItem.Size = New System.Drawing.Size(36, 20)
             Me.JeuToolStripMenuItem.Text = "Jeu"
@@ -55,28 +56,33 @@
             'MenuItemNewGame
             '
             Me.MenuItemNewGame.Name = "MenuItemNewGame"
-            Me.MenuItemNewGame.Size = New System.Drawing.Size(171, 22)
+            Me.MenuItemNewGame.Size = New System.Drawing.Size(190, 22)
             Me.MenuItemNewGame.Text = "Nouveau Jeu"
             '
-            'SauvegarderLeJeuToolStripMenuItem
+            'SauverLaPartieToolStripMenuItem
             '
-            Me.SauvegarderLeJeuToolStripMenuItem.Enabled = False
-            Me.SauvegarderLeJeuToolStripMenuItem.Name = "SauvegarderLeJeuToolStripMenuItem"
-            Me.SauvegarderLeJeuToolStripMenuItem.Size = New System.Drawing.Size(171, 22)
-            Me.SauvegarderLeJeuToolStripMenuItem.Text = "Sauvegarder le Jeu"
+            Me.SauverLaPartieToolStripMenuItem.Enabled = False
+            Me.SauverLaPartieToolStripMenuItem.Name = "SauverLaPartieToolStripMenuItem"
+            Me.SauverLaPartieToolStripMenuItem.Size = New System.Drawing.Size(190, 22)
+            Me.SauverLaPartieToolStripMenuItem.Text = "Sauver la partie"
             '
             'ChargerLeJeuToolStripMenuItem
             '
-            Me.ChargerLeJeuToolStripMenuItem.Enabled = False
             Me.ChargerLeJeuToolStripMenuItem.Name = "ChargerLeJeuToolStripMenuItem"
-            Me.ChargerLeJeuToolStripMenuItem.Size = New System.Drawing.Size(171, 22)
+            Me.ChargerLeJeuToolStripMenuItem.Size = New System.Drawing.Size(190, 22)
             Me.ChargerLeJeuToolStripMenuItem.Text = "Charger le Jeu"
             '
             'MenuItemQuit
             '
             Me.MenuItemQuit.Name = "MenuItemQuit"
-            Me.MenuItemQuit.Size = New System.Drawing.Size(171, 22)
+            Me.MenuItemQuit.Size = New System.Drawing.Size(190, 22)
             Me.MenuItemQuit.Text = "Quitter le Jeu"
+            '
+            'SauverPartieSousToolStripMenuItem
+            '
+            Me.SauverPartieSousToolStripMenuItem.Name = "SauverPartieSousToolStripMenuItem"
+            Me.SauverPartieSousToolStripMenuItem.Size = New System.Drawing.Size(190, 22)
+            Me.SauverPartieSousToolStripMenuItem.Text = "Sauver la partie sous..."
             '
             'PlateauPanel
             '
@@ -111,9 +117,10 @@
         Friend WithEvents MenuSolitaire As MenuStrip
         Friend WithEvents JeuToolStripMenuItem As ToolStripMenuItem
         Friend WithEvents MenuItemNewGame As ToolStripMenuItem
-        Friend WithEvents SauvegarderLeJeuToolStripMenuItem As ToolStripMenuItem
+        Friend WithEvents SauverLaPartieToolStripMenuItem As ToolStripMenuItem
         Friend WithEvents ChargerLeJeuToolStripMenuItem As ToolStripMenuItem
         Friend WithEvents MenuItemQuit As ToolStripMenuItem
         Friend WithEvents PlateauPanel As Panel
+        Friend WithEvents SauverPartieSousToolStripMenuItem As ToolStripMenuItem
     End Class
 End Namespace

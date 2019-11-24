@@ -5,3 +5,4 @@ D:\projets\solitaire\solitaire\Solitaire.Modele\obj\Release\netstandard2.0\Solit
 D:\projets\solitaire\solitaire\Solitaire.Modele\obj\Release\netstandard2.0\Solitaire.Modele.AssemblyInfo.vb
 D:\projets\solitaire\solitaire\Solitaire.Modele\obj\Release\netstandard2.0\Solitaire.Modele.dll
 D:\projets\solitaire\solitaire\Solitaire.Modele\obj\Release\netstandard2.0\Solitaire.Modele.pdb
+D:\projets\solitaire\solitaire\Solitaire.Modele\obj\Release\netstandard2.0\Solitaire.Modele.vbprojAssemblyReference.cache

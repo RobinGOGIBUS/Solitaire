@@ -1,5 +1,12 @@
 ﻿Namespace Modele
+
+    <Serializable()>
     Public Class Plateau
+
+#Region "Constantes"
+        Private Const _nbMaxValues As Integer = 13
+#End Region
+
 #Region "Déclarations"
 
         Private _colonnes As List(Of List(Of Carte))
@@ -10,7 +17,6 @@
 
         Private _piocheCartesNonVisibles As Stack(Of Carte)
 
-        Private _nbMaxValues As Integer
 
 #End Region
 
@@ -64,7 +70,6 @@
 #Region "Méthodes"
         Public Sub Initialisation()
             _piocheCartesVisibles = New Stack(Of Carte)
-            _nbMaxValues = System.Enum.GetValues(GetType(EValeurs)).Length
             InitJeuDeCartes()
             InitColonnes()
             InitPiles()
