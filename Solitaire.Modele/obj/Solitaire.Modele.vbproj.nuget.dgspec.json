@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\projets\\solitaire\\Solitaire\\Solitaire.Modele\\Solitaire.Modele.vbproj": {}
+    "D:\\projets\\solitaire\\solitaire\\Solitaire.Modele\\Solitaire.Modele.vbproj": {}
   },
   "projects": {
-    "D:\\projets\\solitaire\\Solitaire\\Solitaire.Modele\\Solitaire.Modele.vbproj": {
+    "D:\\projets\\solitaire\\solitaire\\Solitaire.Modele\\Solitaire.Modele.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projets\\solitaire\\Solitaire\\Solitaire.Modele\\Solitaire.Modele.vbproj",
+        "projectUniqueName": "D:\\projets\\solitaire\\solitaire\\Solitaire.Modele\\Solitaire.Modele.vbproj",
         "projectName": "Solitaire.Modele",
-        "projectPath": "D:\\projets\\solitaire\\Solitaire\\Solitaire.Modele\\Solitaire.Modele.vbproj",
+        "projectPath": "D:\\projets\\solitaire\\solitaire\\Solitaire.Modele\\Solitaire.Modele.vbproj",
         "packagesPath": "C:\\Users\\SirHenry\\.nuget\\packages\\",
-        "outputPath": "D:\\projets\\solitaire\\Solitaire\\Solitaire.Modele\\obj\\",
+        "outputPath": "D:\\projets\\solitaire\\solitaire\\Solitaire.Modele\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

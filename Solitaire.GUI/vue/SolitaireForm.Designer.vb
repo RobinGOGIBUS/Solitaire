@@ -27,10 +27,10 @@
             Me.MenuSolitaire = New System.Windows.Forms.MenuStrip()
             Me.JeuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
             Me.MenuItemNewGame = New System.Windows.Forms.ToolStripMenuItem()
+            Me.SauverPartieSousToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
             Me.SauverLaPartieToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
             Me.ChargerLeJeuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
             Me.MenuItemQuit = New System.Windows.Forms.ToolStripMenuItem()
-            Me.SauverPartieSousToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
             Me.PlateauPanel = New System.Windows.Forms.Panel()
             Me.MenuSolitaire.SuspendLayout()
             Me.SuspendLayout()
@@ -59,6 +59,12 @@
             Me.MenuItemNewGame.Size = New System.Drawing.Size(190, 22)
             Me.MenuItemNewGame.Text = "Nouveau Jeu"
             '
+            'SauverPartieSousToolStripMenuItem
+            '
+            Me.SauverPartieSousToolStripMenuItem.Name = "SauverPartieSousToolStripMenuItem"
+            Me.SauverPartieSousToolStripMenuItem.Size = New System.Drawing.Size(190, 22)
+            Me.SauverPartieSousToolStripMenuItem.Text = "Sauver la partie sous..."
+            '
             'SauverLaPartieToolStripMenuItem
             '
             Me.SauverLaPartieToolStripMenuItem.Enabled = False
@@ -77,12 +83,6 @@
             Me.MenuItemQuit.Name = "MenuItemQuit"
             Me.MenuItemQuit.Size = New System.Drawing.Size(190, 22)
             Me.MenuItemQuit.Text = "Quitter le Jeu"
-            '
-            'SauverPartieSousToolStripMenuItem
-            '
-            Me.SauverPartieSousToolStripMenuItem.Name = "SauverPartieSousToolStripMenuItem"
-            Me.SauverPartieSousToolStripMenuItem.Size = New System.Drawing.Size(190, 22)
-            Me.SauverPartieSousToolStripMenuItem.Text = "Sauver la partie sous..."
             '
             'PlateauPanel
             '

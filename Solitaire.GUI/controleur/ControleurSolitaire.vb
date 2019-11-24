@@ -1,5 +1,6 @@
 ﻿
 Imports System.IO
+Imports System.Xml
 Imports System.Xml.Serialization
 Imports Solitaire.GUI.Vue
 
@@ -31,11 +32,23 @@ Namespace Controleur
             End Using
         End Sub
 
+        Public Sub SauverPartie()
+            If Not String.IsNullOrWhiteSpace(sauvegardeCourante) AndAlso File.Exists(sauvegardeCourante) Then
+                Dim xs As XmlSerializer = New XmlSerializer(GetType(Solitaire.Modele.Modele.Solitaire))
+                Using rd As StreamWriter = New StreamWriter(sauvegardeCourante)
+                    xs.Serialize(rd, _modele)
+                End Using
+            Else
+                Throw New Exception("Pas de fichier de sauvegarde en cours.")
+            End If
+        End Sub
+
         Public Sub ChargerLeJeu(ByVal pNomFichier As String)
+            sauvegardeCourante = pNomFichier
             Dim xs As XmlSerializer = New XmlSerializer(GetType(Solitaire.Modele.Modele.Solitaire))
             Using rd As StreamReader = New StreamReader(sauvegardeCourante)
                 _modele = DirectCast(xs.Deserialize(rd), Solitaire.Modele.Modele.Solitaire)
-                _vue.ChargerVueJeu()
+                _vue.ChargerVueJeu(_modele)
             End Using
         End Sub
 

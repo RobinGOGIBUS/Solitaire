@@ -1,3 +1,5 @@
+Imports System.Xml.Serialization
+
 Namespace Modele
 
     <Serializable()>
@@ -43,8 +45,9 @@ Namespace Modele
 #Region "Méthodes"
 
         Public Sub NouveauJeu()
-            _plateau = New Plateau()
             _partieEnCours = True
+            _plateau = New Plateau()
+            _plateau.Initialisation()
         End Sub
 #End Region
 
