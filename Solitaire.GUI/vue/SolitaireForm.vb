@@ -42,6 +42,7 @@ Namespace Vue
         Private Sub MenuItemNewGame_Click() Handles MenuItemNewGame.Click
             Try
                 Cursor.Current = Cursors.WaitCursor
+                Me.Enabled = False
                 PlateauPanel.Controls.Clear()
                 jeu.NouveauJeu()
                 plateauVue = New PlateauUserControl(jeu.Plateau)
@@ -50,6 +51,7 @@ Namespace Vue
                 Sounds.playError()
                 MessageBox.Show(ex.Message(), "", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Finally
+                Me.Enabled = True
                 Cursor.Current = Cursors.Default
             End Try
         End Sub
@@ -71,6 +73,8 @@ Namespace Vue
 
         Private Sub ChargerLeJeuToolStripMenuItem_Click(pSender As Object, pE As EventArgs) Handles ChargerLeJeuToolStripMenuItem.Click
             Try
+                Cursor.Current = Cursors.WaitCursor
+                Me.Enabled = False
                 Dim openFileDialog As OpenFileDialog = New OpenFileDialog() With {.Filter = "Fichiers de sauvegarde (*.xml)|*.xml", .CheckFileExists = True, .CheckPathExists = True}
                 If openFileDialog.ShowDialog() = DialogResult.OK Then
                     controleur.ChargerLeJeu(openFileDialog.FileName())
@@ -79,6 +83,9 @@ Namespace Vue
             Catch ex As Exception
                 Sounds.playError()
                 MessageBox.Show(ex.Message(), "", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Finally
+                Me.Enabled = True
+                Cursor.Current = Cursors.Default
             End Try
 
         End Sub
@@ -86,7 +93,7 @@ Namespace Vue
         Private Sub SauverPartieSousToolStripMenuItem_Click(pSender As Object, pE As EventArgs) Handles SauverPartieSousToolStripMenuItem.Click
             Try
                 If jeu.PartieEnCours() Then
-                    Dim saveFileDialog As SaveFileDialog = New SaveFileDialog() With {.Filter = "Fichiers de sauvegarde (*.xml)|*.xml", .ValidateNames = True}
+                    Dim saveFileDialog As SaveFileDialog = New SaveFileDialog() With {.Filter = "Fichiers de sauvegarde (*.xml)|*.xml"}
                     If saveFileDialog.ShowDialog() = DialogResult.OK Then
                         controleur.SauverPartieSous(saveFileDialog.FileName())
                         SauverLaPartieToolStripMenuItem.Enabled = True
@@ -101,7 +108,18 @@ Namespace Vue
         End Sub
 
         Private Sub SauverLaPartieToolStripMenuItem_Click(pSender As Object, pE As EventArgs) Handles SauverLaPartieToolStripMenuItem.Click
-            controleur.SauverPartie()
+            Try
+                Cursor.Current = Cursors.WaitCursor
+                Me.Enabled = False
+                controleur.SauverPartie()
+            Catch ex As Exception
+                Sounds.playError()
+                MessageBox.Show(ex.Message(), "", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Finally
+                Me.Enabled = True
+                Cursor.Current = Cursors.Default
+            End Try
+
         End Sub
 
 

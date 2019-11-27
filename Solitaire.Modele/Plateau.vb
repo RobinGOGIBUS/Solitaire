@@ -328,6 +328,9 @@ Namespace Modele
                     Exit For
                 End If
             Next
+            If Not _piocheCartesNonVisibles.Any() And Not _piocheCartesVisibles.Any() And _colonnes.ToArray.Length = 0 Then
+                ok = ok And True
+            End If
             Return ok
         End Function
 

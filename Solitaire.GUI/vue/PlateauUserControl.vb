@@ -69,6 +69,7 @@ Namespace Vue
             InitialisationPioche()
             InitialisationColonnes()
             InitialisationPiles()
+            cartesVuesSelectionnees = New List(Of CarteVue)
         End Sub
 
         Private Sub InitialisationPiles()
