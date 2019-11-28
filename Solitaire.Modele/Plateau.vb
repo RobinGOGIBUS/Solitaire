@@ -1,51 +1,60 @@
-﻿Namespace Modele
+﻿Imports Solitaire.Modele.Modele.Collections.StackList
+
+Namespace Modele
+
+    <Serializable()>
     Public Class Plateau
+
+#Region "Constantes"
+        Private Const _nbMaxValues As Integer = 13
+#End Region
+
 #Region "Déclarations"
 
         Private _colonnes As List(Of List(Of Carte))
 
-        Private _piles As List(Of Stack(Of Carte))
+        Private _piles As List(Of StackList(Of Carte))
 
-        Private _piocheCartesVisibles As Stack(Of Carte)
+        Private _piocheCartesVisibles As StackList(Of Carte)
 
-        Private _piocheCartesNonVisibles As Stack(Of Carte)
+        Private _piocheCartesNonVisibles As StackList(Of Carte)
 
-        Private _nbMaxValues As Integer
 
 #End Region
 
 #Region "Constructeur"
+
         Public Sub New()
-            Initialisation()
+
         End Sub
 
 #End Region
 
 #Region "Propriétés"
 
-        Public Property PiochecartesNonVisibles() As Stack(Of Carte)
+        Public Property PiochecartesNonVisibles() As StackList(Of Carte)
             Get
                 Return _piocheCartesNonVisibles
             End Get
-            Set(ByVal value As Stack(Of Carte))
+            Set(ByVal value As StackList(Of Carte))
                 _piocheCartesNonVisibles = value
             End Set
         End Property
 
-        Public Property PiocheCartesVisibles() As Stack(Of Carte)
+        Public Property PiocheCartesVisibles() As StackList(Of Carte)
             Get
                 Return _piocheCartesVisibles
             End Get
-            Set(ByVal value As Stack(Of Carte))
+            Set(ByVal value As StackList(Of Carte))
                 _piocheCartesVisibles = value
             End Set
         End Property
 
-        Public Property Piles() As List(Of Stack(Of Carte))
+        Public Property Piles() As List(Of StackList(Of Carte))
             Get
                 Return _piles
             End Get
-            Set(ByVal value As List(Of Stack(Of Carte)))
+            Set(ByVal value As List(Of StackList(Of Carte)))
                 _piles = value
             End Set
         End Property
@@ -63,17 +72,16 @@
 
 #Region "Méthodes"
         Public Sub Initialisation()
-            _piocheCartesVisibles = New Stack(Of Carte)
-            _nbMaxValues = System.Enum.GetValues(GetType(EValeurs)).Length
+            _piocheCartesVisibles = New StackList(Of Carte)
             InitJeuDeCartes()
             InitColonnes()
             InitPiles()
         End Sub
 
         Public Sub InitPiles()
-            _piles = New List(Of Stack(Of Carte))
+            _piles = New List(Of StackList(Of Carte))
             For i As Integer = 0 To 3
-                _piles.Add(New Stack(Of Carte))
+                _piles.Add(New StackList(Of Carte))
             Next
         End Sub
 
@@ -112,7 +120,7 @@
         End Sub
 
         Public Sub InitJeuDeCartes()
-            _piocheCartesNonVisibles = New Stack(Of Carte)
+            _piocheCartesNonVisibles = New StackList(Of Carte)
             Dim jeuDeCartes As List(Of Carte) = New List(Of Carte)
             Dim types As Array = System.Enum.GetValues(GetType(ETypes))
             Dim valeurs As Array = System.Enum.GetValues(GetType(EValeurs))
@@ -320,6 +328,9 @@
                     Exit For
                 End If
             Next
+            If Not _piocheCartesNonVisibles.Any() And Not _piocheCartesVisibles.Any() And _colonnes.ToArray.Length = 0 Then
+                ok = ok And True
+            End If
             Return ok
         End Function
 

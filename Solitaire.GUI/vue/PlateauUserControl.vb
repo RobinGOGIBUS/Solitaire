@@ -1,6 +1,7 @@
 ﻿Imports Solitaire.GUI.Controleur
 Imports Solitaire.Modele
 Imports Solitaire.Modele.Modele
+Imports Solitaire.Modele.Modele.Collections.StackList
 Imports Transitions
 
 Namespace Vue
@@ -67,6 +68,26 @@ Namespace Vue
             InitialisationListeParents()
             InitialisationPioche()
             InitialisationColonnes()
+            InitialisationPiles()
+            cartesVuesSelectionnees = New List(Of CarteVue)
+        End Sub
+
+        Private Sub InitialisationPiles()
+            For Each pile As StackList(Of Carte) In modele.Piles
+                Dim pilePanel As Panel = listeParents(EParent.Pile)(modele.Piles.IndexOf(pile))
+                Dim base As Point = pilePanel.Location
+                If pile.Any() Then
+                    For Each carte As Carte In pile
+                        Dim image As PictureBox = New PictureBox()
+                        image.Width = largeurCarte
+                        image.Height = longueurCarte
+                        image.Location = base
+                        image.Name = carte.Type & "-" & carte.Valeur
+                        Me.Controls.Add(image)
+                        cartesVues.Add(image.Name, New CarteVue(pilePanel, image, carte, Me) With {.ParentType = EParent.Pile})
+                    Next
+                End If
+            Next
         End Sub
 
         Private Sub InitialisationListeParents()
@@ -85,15 +106,29 @@ Namespace Vue
         End Sub
 
         Private Sub InitialisationPioche()
-            For Each carte As Carte In modele.PiochecartesNonVisibles.Reverse.ToList
-                Dim image As PictureBox = New PictureBox()
-                image.Width = largeurCarte
-                image.Height = longueurCarte
-                image.Name = carte.Type & "-" & carte.Valeur
-                image.Location = PiochePanelNonVues.Location
-                Me.Controls.Add(image)
-                cartesVues.Add(image.Name, New CarteVue(PiochePanelNonVues, image, carte, Me) With {.ParentType = EParent.Pioche})
-            Next
+            If modele.PiochecartesNonVisibles.Any() Then
+                For Each carte As Carte In modele.PiochecartesNonVisibles
+                    Dim image As PictureBox = New PictureBox()
+                    image.Width = largeurCarte
+                    image.Height = longueurCarte
+                    image.Name = carte.Type & "-" & carte.Valeur
+                    image.Location = PiochePanelNonVues.Location
+                    Me.Controls.Add(image)
+                    cartesVues.Add(image.Name, New CarteVue(PiochePanelNonVues, image, carte, Me) With {.ParentType = EParent.Pioche})
+                Next
+            End If
+
+            If modele.PiocheCartesVisibles.Any() Then
+                For Each carte As Carte In modele.PiocheCartesVisibles
+                    Dim image As PictureBox = New PictureBox()
+                    image.Width = largeurCarte
+                    image.Height = longueurCarte
+                    image.Name = carte.Type & "-" & carte.Valeur
+                    image.Location = PiochePanelVues.Location
+                    Me.Controls.Add(image)
+                    cartesVues.Add(image.Name, New CarteVue(PiochePanelVues, image, carte, Me) With {.ParentType = EParent.Pioche})
+                Next
+            End If
         End Sub
 
         Public Sub InitialisationColonnes()
@@ -101,16 +136,22 @@ Namespace Vue
             For Each colonne As List(Of Carte) In modele.Colonnes
                 Dim colonnePanel As Panel = listeParents(EParent.Colonne)(modele.Colonnes.IndexOf(colonne))
                 Dim base As Point = colonnePanel.Location
-                For Each carte In colonne
-                    Dim image As PictureBox = New PictureBox()
-                    image.Width = largeurCarte
-                    image.Height = longueurCarte
-                    image.Location = base
-                    image.Name = carte.Type & "-" & carte.Valeur
-                    Me.Controls.Add(image)
-                    cartesVues.Add(image.Name, New CarteVue(colonnePanel, image, carte, Me) With {.ParentType = EParent.Colonne})
-                    base.Y += ecartCarteNonVisibleColonne
-                Next
+                If colonne.Any() Then
+                    For Each carte In colonne
+                        Dim image As PictureBox = New PictureBox()
+                        image.Width = largeurCarte
+                        image.Height = longueurCarte
+                        image.Location = base
+                        image.Name = carte.Type & "-" & carte.Valeur
+                        Me.Controls.Add(image)
+                        cartesVues.Add(image.Name, New CarteVue(colonnePanel, image, carte, Me) With {.ParentType = EParent.Colonne})
+                        If carte.IsVisible Then
+                            base.Y += ecartCarteVisibleColonne
+                        Else
+                            base.Y += ecartCarteNonVisibleColonne
+                        End If
+                    Next
+                End If
             Next
 
         End Sub
@@ -122,14 +163,14 @@ Namespace Vue
             DesactiveToutesActionsPioches()
             Dim transitions(modele.PiochecartesNonVisibles.Count - 1) As Transition
             Dim action = Sub() AppelDelegueActivationCartesPiocheNonVisible(transitions)
-            For Each carte As Carte In modele.PiochecartesNonVisibles.Reverse.ToList
+            For Each carte As Carte In modele.PiochecartesNonVisibles
                 cartesVues(carte.Type & "-" & carte.Valeur).Parent = PiochePanelNonVues
                 cartesVues(carte.Type & "-" & carte.Valeur).ParentType = EParent.Pioche
                 cartesVues(carte.Type & "-" & carte.Valeur).LocalisationCourante = PiochePanelNonVues.Location
                 cartesVues(carte.Type & "-" & carte.Valeur).NonVisiblePioche()
                 Dim t As Transition = New Transition(New TransitionType_Linear(tempsTransitionInversion))
                 t.add(cartesVues(carte.Type & "-" & carte.Valeur).Image, "Left", PiochePanelNonVues.Location.X)
-                transitions(modele.PiochecartesNonVisibles.Reverse.ToList.IndexOf(carte)) = t
+                transitions(modele.PiochecartesNonVisibles.IndexOf(carte)) = t
             Next
             AddHandler transitions.LastOrDefault().TransitionCompletedEvent, action
             Transition.runChain(transitions)
@@ -310,8 +351,8 @@ Namespace Vue
 
 #Region "Evenements"
         Public Sub CarteVue_MouseDown(pSender As Object, pE As MouseEventArgs)
-            cartesVuesSelectionnees = New List(Of CarteVue)
-            If pE.Button = Windows.Forms.MouseButtons.Left Then
+            If pE.Button = MouseButtons.Left Then
+                cartesVuesSelectionnees = New List(Of CarteVue)
                 cartesVues(pSender.Name).X = Control.MousePosition.X - pSender.Location.X
                 cartesVues(pSender.Name).Y = Control.MousePosition.Y - pSender.Location.Y
                 pSender.BringToFront()
@@ -339,7 +380,7 @@ Namespace Vue
         End Sub
 
         Public Sub CarteVue_MouseMove(pSender As Object, pE As MouseEventArgs)
-            If pE.Button = Windows.Forms.MouseButtons.Left Then
+            If pE.Button = MouseButtons.Left Then
                 Dim point As Point = Control.MousePosition
                 point.X = point.X - (cartesVues(pSender.Name).X)
                 point.Y = point.Y - (cartesVues(pSender.Name).Y)

@@ -1,17 +1,21 @@
+Imports System.Xml.Serialization
+
 Namespace Modele
+
+    <Serializable()>
     Public Class Solitaire
 
 #Region "Declarations"
+
         Private _plateau As Plateau = Nothing
 
-        Private jeu As Solitaire = Nothing
+        Private _partieEnCours As Boolean
 
-        Private instance As Solitaire = Nothing
 #End Region
 
 #Region "Constructeur"
         Public Sub New()
-
+            _partieEnCours = False
         End Sub
 #End Region
 
@@ -26,13 +30,24 @@ Namespace Modele
             End Set
         End Property
 
+        Public Property PartieEnCours As Boolean
+            Get
+                Return _partieEnCours
+            End Get
+            Set(ByVal value As Boolean)
+                _partieEnCours = value
+            End Set
+        End Property
+
 
 #End Region
 
 #Region "Méthodes"
 
         Public Sub NouveauJeu()
+            _partieEnCours = True
             _plateau = New Plateau()
+            _plateau.Initialisation()
         End Sub
 #End Region
 

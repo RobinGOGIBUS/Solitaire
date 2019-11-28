@@ -1,4 +1,6 @@
 ﻿Namespace Modele
+
+    <Serializable()>
     Public Class Carte
 
 #Region "Déclarations"
@@ -13,7 +15,12 @@
 
 #End Region
 
-#Region "Constructeur"
+#Region "Constructeurs"
+
+        Public Sub New()
+
+        End Sub
+
         Public Sub New(ByVal pType As ETypes, ByVal pValeur As EValeurs, ByVal pIsVisible As Boolean, ByVal pCouleur As ECouleurs)
             _type = pType
             _valeur = pValeur
@@ -24,22 +31,31 @@
 
 #Region "Propriétés"
 
-        Public ReadOnly Property Type() As ETypes
+        Public Property Type() As ETypes
             Get
                 Return _type
             End Get
+            Set(ByVal value As ETypes)
+                _type = value
+            End Set
         End Property
 
-        Public ReadOnly Property Valeur() As EValeurs
+        Public Property Valeur() As EValeurs
             Get
                 Return _valeur
             End Get
+            Set(ByVal value As EValeurs)
+                _valeur = value
+            End Set
         End Property
 
-        Public ReadOnly Property Couleur() As ECouleurs
+        Public Property Couleur() As ECouleurs
             Get
                 Return _couleur
             End Get
+            Set(ByVal value As ECouleurs)
+                _couleur = value
+            End Set
         End Property
 
 
