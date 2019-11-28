@@ -104,6 +104,7 @@ Namespace Vue
             Catch ex As Exception
                 Sounds.playError()
                 MessageBox.Show(ex.Message(), "", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                SauverLaPartieToolStripMenuItem.Enabled = False
             End Try
         End Sub
 
@@ -115,6 +116,7 @@ Namespace Vue
             Catch ex As Exception
                 Sounds.playError()
                 MessageBox.Show(ex.Message(), "", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                SauverLaPartieToolStripMenuItem.Enabled = False
             Finally
                 Me.Enabled = True
                 Cursor.Current = Cursors.Default

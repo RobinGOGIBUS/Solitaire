@@ -351,8 +351,8 @@ Namespace Vue
 
 #Region "Evenements"
         Public Sub CarteVue_MouseDown(pSender As Object, pE As MouseEventArgs)
-            cartesVuesSelectionnees = New List(Of CarteVue)
-            If pE.Button = Windows.Forms.MouseButtons.Left Then
+            If pE.Button = MouseButtons.Left Then
+                cartesVuesSelectionnees = New List(Of CarteVue)
                 cartesVues(pSender.Name).X = Control.MousePosition.X - pSender.Location.X
                 cartesVues(pSender.Name).Y = Control.MousePosition.Y - pSender.Location.Y
                 pSender.BringToFront()
@@ -380,7 +380,7 @@ Namespace Vue
         End Sub
 
         Public Sub CarteVue_MouseMove(pSender As Object, pE As MouseEventArgs)
-            If pE.Button = Windows.Forms.MouseButtons.Left Then
+            If pE.Button = MouseButtons.Left Then
                 Dim point As Point = Control.MousePosition
                 point.X = point.X - (cartesVues(pSender.Name).X)
                 point.Y = point.Y - (cartesVues(pSender.Name).Y)
