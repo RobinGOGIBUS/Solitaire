@@ -39,7 +39,7 @@ Namespace Vue
             Me.Close()
         End Sub
 
-        Private Sub MenuItemNewGame_Click() Handles MenuItemNewGame.Click
+        Private Sub MenuItemNouveauJeu_Click() Handles MenuItemNouveauJeu.Click
             Try
                 Cursor.Current = Cursors.WaitCursor
                 Me.Enabled = False
@@ -65,7 +65,7 @@ Namespace Vue
 
         Private Sub PlateauUserControl_Victoire() Handles plateauVue.Victoire
             If MessageBox.Show("Voulez-vous refaire une partie ?", "Rejouer une partie", MessageBoxButtons.YesNo, MessageBoxIcon.Information) = DialogResult.Yes Then
-                MenuItemNewGame_Click()
+                MenuItemNouveauJeu_Click()
             Else
                 PlateauPanel.Controls.Clear()
             End If

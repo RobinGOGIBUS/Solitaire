@@ -94,7 +94,7 @@ Namespace Modele
                         _colonnes(i).Add(_piocheCartesNonVisibles.Pop())
                     End If
                 Next
-                _piocheCartesNonVisibles.Peek().IsVisible = True
+                _piocheCartesNonVisibles.Peek().EstVisible = True
                 _colonnes(i).Add(_piocheCartesNonVisibles.Pop())
             Next
         End Sub
@@ -141,7 +141,7 @@ Namespace Modele
             Dim val = _piocheCartesNonVisibles.Peek()
             If Equals(pCarte, _piocheCartesNonVisibles.Peek()) Then
                 valide = True
-                _piocheCartesNonVisibles.Peek().IsVisible = True
+                _piocheCartesNonVisibles.Peek().EstVisible = True
                 _piocheCartesVisibles.Push(_piocheCartesNonVisibles.Pop())
             End If
             Return valide
@@ -151,7 +151,7 @@ Namespace Modele
             Dim inversion As Boolean = False
             If _piocheCartesVisibles.Count > 0 And _piocheCartesNonVisibles.Count = 0 Then
                 For i As Integer = 0 To _piocheCartesVisibles.Count - 1
-                    _piocheCartesVisibles.Peek().IsVisible = False
+                    _piocheCartesVisibles.Peek().EstVisible = False
                     _piocheCartesNonVisibles.Push(_piocheCartesVisibles.Pop())
                 Next
                 inversion = True
@@ -179,8 +179,8 @@ Namespace Modele
                 If Not cartesSelectionnees AndAlso (pCarte.Valeur = SommetPile.Valeur + 1) AndAlso (pCarte.Type = SommetPile.Type) Then
                     _piles(pIndiceD).Push(_colonnes(pIndiceE).LastOrDefault())
                     _colonnes(pIndiceE).Remove(pCarte)
-                    If _colonnes(pIndiceE).Count > 0 AndAlso Not _colonnes(pIndiceE).LastOrDefault().IsVisible Then
-                        _colonnes(pIndiceE).LastOrDefault().IsVisible = True
+                    If _colonnes(pIndiceE).Count > 0 AndAlso Not _colonnes(pIndiceE).LastOrDefault().EstVisible Then
+                        _colonnes(pIndiceE).LastOrDefault().EstVisible = True
                     End If
                     Return True
                 Else
@@ -190,8 +190,8 @@ Namespace Modele
                 If Not cartesSelectionnees AndAlso pCarte.Valeur = EValeurs.Un Then
                     _piles(pIndiceD).Push(_colonnes(pIndiceE).LastOrDefault())
                     _colonnes(pIndiceE).Remove(pCarte)
-                    If _colonnes(pIndiceE).Count > 0 AndAlso Not _colonnes(pIndiceE).LastOrDefault().IsVisible Then
-                        _colonnes(pIndiceE).LastOrDefault().IsVisible = True
+                    If _colonnes(pIndiceE).Count > 0 AndAlso Not _colonnes(pIndiceE).LastOrDefault().EstVisible Then
+                        _colonnes(pIndiceE).LastOrDefault().EstVisible = True
                     End If
                     Return True
                 Else
@@ -300,8 +300,8 @@ Namespace Modele
                     _colonnes(pIndiceD).Add(_colonnes(pIndiceE)(indiceCarte))
                     _colonnes(pIndiceE).Remove(_colonnes(pIndiceE)(indiceCarte))
                 End If
-                If _colonnes(pIndiceE).Count > 0 AndAlso Not _colonnes(pIndiceE).LastOrDefault().IsVisible Then
-                    _colonnes(pIndiceE).LastOrDefault().IsVisible = True
+                If _colonnes(pIndiceE).Count > 0 AndAlso Not _colonnes(pIndiceE).LastOrDefault().EstVisible Then
+                    _colonnes(pIndiceE).LastOrDefault().EstVisible = True
                 End If
             End If
             Return ok

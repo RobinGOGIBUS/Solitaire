@@ -11,7 +11,7 @@
 
         Private _couleur As ECouleurs
 
-        Private _isVisible As Boolean
+        Private _estVisible As Boolean
 
 #End Region
 
@@ -24,7 +24,7 @@
         Public Sub New(ByVal pType As ETypes, ByVal pValeur As EValeurs, ByVal pIsVisible As Boolean, ByVal pCouleur As ECouleurs)
             _type = pType
             _valeur = pValeur
-            _isVisible = pIsVisible
+            _estVisible = pIsVisible
             _couleur = pCouleur
         End Sub
 #End Region
@@ -59,12 +59,12 @@
         End Property
 
 
-        Public Property IsVisible() As Boolean
+        Public Property EstVisible() As Boolean
             Get
-                Return _isVisible
+                Return _estVisible
             End Get
             Set(ByVal value As Boolean)
-                _isVisible = value
+                _estVisible = value
             End Set
         End Property
 #End Region

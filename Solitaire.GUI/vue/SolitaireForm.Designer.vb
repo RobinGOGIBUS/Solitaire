@@ -26,7 +26,7 @@
             Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SolitaireForm))
             Me.MenuSolitaire = New System.Windows.Forms.MenuStrip()
             Me.JeuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-            Me.MenuItemNewGame = New System.Windows.Forms.ToolStripMenuItem()
+            Me.MenuItemNouveauJeu = New System.Windows.Forms.ToolStripMenuItem()
             Me.SauverPartieSousToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
             Me.SauverLaPartieToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
             Me.ChargerLeJeuToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -48,16 +48,16 @@
             '
             'JeuToolStripMenuItem
             '
-            Me.JeuToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuItemNewGame, Me.SauverPartieSousToolStripMenuItem, Me.SauverLaPartieToolStripMenuItem, Me.ChargerLeJeuToolStripMenuItem, Me.MenuItemQuit})
+            Me.JeuToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MenuItemNouveauJeu, Me.SauverPartieSousToolStripMenuItem, Me.SauverLaPartieToolStripMenuItem, Me.ChargerLeJeuToolStripMenuItem, Me.MenuItemQuit})
             Me.JeuToolStripMenuItem.Name = "JeuToolStripMenuItem"
             Me.JeuToolStripMenuItem.Size = New System.Drawing.Size(36, 20)
             Me.JeuToolStripMenuItem.Text = "Jeu"
             '
-            'MenuItemNewGame
+            'MenuItemNouveauJeu
             '
-            Me.MenuItemNewGame.Name = "MenuItemNewGame"
-            Me.MenuItemNewGame.Size = New System.Drawing.Size(190, 22)
-            Me.MenuItemNewGame.Text = "Nouveau Jeu"
+            Me.MenuItemNouveauJeu.Name = "MenuItemNouveauJeu"
+            Me.MenuItemNouveauJeu.Size = New System.Drawing.Size(190, 22)
+            Me.MenuItemNouveauJeu.Text = "Nouveau Jeu"
             '
             'SauverPartieSousToolStripMenuItem
             '
@@ -116,7 +116,7 @@
         End Sub
         Friend WithEvents MenuSolitaire As MenuStrip
         Friend WithEvents JeuToolStripMenuItem As ToolStripMenuItem
-        Friend WithEvents MenuItemNewGame As ToolStripMenuItem
+        Friend WithEvents MenuItemNouveauJeu As ToolStripMenuItem
         Friend WithEvents SauverLaPartieToolStripMenuItem As ToolStripMenuItem
         Friend WithEvents ChargerLeJeuToolStripMenuItem As ToolStripMenuItem
         Friend WithEvents MenuItemQuit As ToolStripMenuItem

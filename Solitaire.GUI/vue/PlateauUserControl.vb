@@ -145,7 +145,7 @@ Namespace Vue
                         image.Name = carte.Type & "-" & carte.Valeur
                         Me.Controls.Add(image)
                         cartesVues.Add(image.Name, New CarteVue(colonnePanel, image, carte, Me) With {.ParentType = EParent.Colonne})
-                        If carte.IsVisible Then
+                        If carte.EstVisible Then
                             base.Y += ecartCarteVisibleColonne
                         Else
                             base.Y += ecartCarteNonVisibleColonne
@@ -276,7 +276,7 @@ Namespace Vue
             If listeCartesColonneE.Count > 0 Then
                 carte = listeCartesColonneE.LastOrDefault()
             End If
-            If Not carte Is Nothing AndAlso carte.IsVisible AndAlso (Not cartesVues(carte.Type & "-" & carte.Valeur).IsVisible) Then
+            If Not carte Is Nothing AndAlso carte.EstVisible AndAlso (Not cartesVues(carte.Type & "-" & carte.Valeur).EstVisible) Then
                 cartesVues(carte.Type & "-" & carte.Valeur).Visible()
                 cartesVues(carte.Type & "-" & carte.Valeur).ActiverActionsVisible()
             End If

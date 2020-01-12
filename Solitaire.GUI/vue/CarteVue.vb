@@ -24,7 +24,7 @@ Namespace Vue
 
         Private _parentType As EParent
 
-        Private _isVisible As Boolean
+        Private _estVisible As Boolean
 
 #End Region
 
@@ -42,9 +42,9 @@ Namespace Vue
 
 #Region "Propriétés"
 
-        Public ReadOnly Property IsVisible() As Boolean
+        Public ReadOnly Property EstVisible() As Boolean
             Get
-                Return _isVisible
+                Return _estVisible
             End Get
         End Property
 
@@ -115,7 +115,7 @@ Namespace Vue
         Public Sub Visible()
             _image.BackgroundImage = _fondImage
             _image.BringToFront()
-            _isVisible = True
+            _estVisible = True
         End Sub
 
         Public Sub ActiverActionsVisible()
@@ -143,13 +143,13 @@ Namespace Vue
         Public Sub NonVisiblePioche()
             _image.BackgroundImage = My.Resources.Fond
             _image.BringToFront()
-            _isVisible = False
+            _estVisible = False
         End Sub
 
         Public Sub NonVisible()
             _image.BackgroundImage = My.Resources.Fond
             _image.BringToFront()
-            _isVisible = False
+            _estVisible = False
             RemoveHandler _image.MouseDown, AddressOf _vuePlateau.CarteVue_MouseDown
             RemoveHandler _image.MouseUp, AddressOf _vuePlateau.CarteVue_MouseUp
             RemoveHandler _image.MouseMove, AddressOf _vuePlateau.CarteVue_MouseMove
@@ -158,7 +158,7 @@ Namespace Vue
         Public Sub Initialisation()
             _fondImage = _vuePlateau.imageListeCartes.Images(IndexCarte())
             _localisationCourante = _image.Location
-            If _modele.IsVisible Then
+            If _modele.EstVisible Then
                 Visible()
                 ActiverActionsVisible()
             Else
