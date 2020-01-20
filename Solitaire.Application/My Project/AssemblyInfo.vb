@@ -11,9 +11,9 @@ Imports System.Runtime.InteropServices
 
 <Assembly: AssemblyTitle("Solitaire")>
 <Assembly: AssemblyDescription("jeu du solitaire")>
-<Assembly: AssemblyCompany("None")>
+<Assembly: AssemblyCompany("")>
 <Assembly: AssemblyProduct("Solitaire")>
-<Assembly: AssemblyCopyright("Copyright © HP Inc. 2019")>
+<Assembly: AssemblyCopyright("")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
@@ -31,6 +31,6 @@ Imports System.Runtime.InteropServices
 ' Vous pouvez spécifier toutes les valeurs ou indiquer les numéros de build et de révision par défaut 
 ' en utilisant '*', comme indiqué ci-dessous :
 
-<Assembly: AssemblyVersion("0.3.0.0")>
-<Assembly: AssemblyFileVersion("0.3.0.0")>
+<Assembly: AssemblyVersion("0.7.0.0")>
+<Assembly: AssemblyFileVersion("0.7.0.0")>
 <Assembly: NeutralResourcesLanguage("fr")>

@@ -1,12 +1,12 @@
 D:\projets\solitaire\solitaire\Solitaire.Application\bin\Release\Solitaire.exe.config
 D:\projets\solitaire\solitaire\Solitaire.Application\bin\Release\Solitaire.exe
 D:\projets\solitaire\solitaire\Solitaire.Application\bin\Release\Solitaire.pdb
-D:\projets\solitaire\solitaire\Solitaire.Application\bin\Release\Solitaire.GUI.exe
+D:\projets\solitaire\solitaire\Solitaire.Application\bin\Release\Solitaire.GUI.dll
 D:\projets\solitaire\solitaire\Solitaire.Application\bin\Release\Solitaire.Modele.dll
 D:\projets\solitaire\solitaire\Solitaire.Application\bin\Release\Transitions.dll
 D:\projets\solitaire\solitaire\Solitaire.Application\bin\Release\Solitaire.GUI.pdb
 D:\projets\solitaire\solitaire\Solitaire.Application\bin\Release\Solitaire.GUI.xml
-D:\projets\solitaire\solitaire\Solitaire.Application\bin\Release\Solitaire.GUI.exe.config
+D:\projets\solitaire\solitaire\Solitaire.Application\bin\Release\Solitaire.GUI.dll.config
 D:\projets\solitaire\solitaire\Solitaire.Application\bin\Release\Solitaire.Modele.pdb
 D:\projets\solitaire\solitaire\Solitaire.Application\bin\Release\Transitions.pdb
 D:\projets\solitaire\solitaire\Solitaire.Application\obj\Release\Solitaire.Application.vbprojAssemblyReference.cache

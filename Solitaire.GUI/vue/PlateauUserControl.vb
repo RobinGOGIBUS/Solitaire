@@ -313,19 +313,19 @@ Namespace Vue
         Public Sub AppelDelegueActivationCartesPiocheVisible(pT As Transition)
             Dim action = Sub() AppelDelegueActivationCartesPiocheVisible(pT)
             RemoveHandler pT.TransitionCompletedEvent, action
-            Invoke(New Delegue(AddressOf ActivationToutEvenementsCartesPioches))
+            BeginInvoke(New Delegue(AddressOf ActivationToutEvenementsCartesPioches))
         End Sub
 
         Public Sub AppelDelegueActivationCartesPiocheNonVisible(pTransitions As Transition())
             Dim action = Sub() AppelDelegueActivationCartesPiocheNonVisible(pTransitions)
             RemoveHandler pTransitions.LastOrDefault().TransitionCompletedEvent, action
-            Invoke(New Delegue(AddressOf ActivationToutEvenementsCartesPioches))
+            BeginInvoke(New Delegue(AddressOf ActivationToutEvenementsCartesPioches))
         End Sub
 
         Public Sub AppelDelegueVictoire(pTransitions As List(Of Transition))
             Dim action = Sub() AppelDelegueVictoire(pTransitions)
             RemoveHandler pTransitions.LastOrDefault().TransitionCompletedEvent, action
-            Invoke(New Delegue(AddressOf AppelRazPlateau))
+            BeginInvoke(New Delegue(AddressOf AppelRazPlateau))
         End Sub
 
         Public Sub AppelRazPlateau()

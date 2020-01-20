@@ -12,15 +12,19 @@ Namespace App
 
         Public Shared Sub Main()
 
-            Dim mutex As Mutex = New Mutex(False, "solitaire")
+            Const nomApp As String = "Solitaire"
+            Dim mutex As Mutex = New Mutex(True, nomApp)
+
             If Not mutex.WaitOne(0, False) Then
                 mutex.Close()
                 MessageBox.Show("Une instance de l'application est déjà ouverte.", "", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-                End
+                Environment.Exit(0)
+            Else
+                Application.EnableVisualStyles()
+                Application.SetCompatibleTextRenderingDefault(False)
+                Application.Run(New SolitaireForm)
+                mutex.ReleaseMutex()
             End If
-            Application.EnableVisualStyles()
-            Application.SetCompatibleTextRenderingDefault(False)
-            Application.Run(New SolitaireForm)
         End Sub
 
     End Class

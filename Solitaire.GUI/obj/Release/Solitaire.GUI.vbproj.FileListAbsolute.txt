@@ -1,5 +1,5 @@
-D:\projets\solitaire\solitaire\Solitaire.GUI\bin\Release\Solitaire.GUI.exe.config
-D:\projets\solitaire\solitaire\Solitaire.GUI\bin\Release\Solitaire.GUI.exe
+D:\projets\solitaire\solitaire\Solitaire.GUI\bin\Release\Solitaire.GUI.dll.config
+D:\projets\solitaire\solitaire\Solitaire.GUI\bin\Release\Solitaire.GUI.dll
 D:\projets\solitaire\solitaire\Solitaire.GUI\bin\Release\Solitaire.GUI.pdb
 D:\projets\solitaire\solitaire\Solitaire.GUI\bin\Release\Solitaire.GUI.xml
 D:\projets\solitaire\solitaire\Solitaire.GUI\bin\Release\MonoGame.Framework.dll
@@ -14,6 +14,6 @@ D:\projets\solitaire\solitaire\Solitaire.GUI\obj\Release\Solitaire.GUI.Vue.Plate
 D:\projets\solitaire\solitaire\Solitaire.GUI\obj\Release\Solitaire.GUI.Vue.SolitaireForm.resources
 D:\projets\solitaire\solitaire\Solitaire.GUI\obj\Release\Solitaire.GUI.vbproj.GenerateResource.cache
 D:\projets\solitaire\solitaire\Solitaire.GUI\obj\Release\Solitaire.GUI.vbproj.CopyComplete
-D:\projets\solitaire\solitaire\Solitaire.GUI\obj\Release\Solitaire.GUI.exe
+D:\projets\solitaire\solitaire\Solitaire.GUI\obj\Release\Solitaire.GUI.dll
 D:\projets\solitaire\solitaire\Solitaire.GUI\obj\Release\Solitaire.GUI.xml
 D:\projets\solitaire\solitaire\Solitaire.GUI\obj\Release\Solitaire.GUI.pdb

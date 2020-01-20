@@ -1,9 +1,7 @@
-D:\projets\solitaire\solitaire\Solitaire.Application\bin\Debug\Solitaire.GUI.exe
 D:\projets\solitaire\solitaire\Solitaire.Application\bin\Debug\Solitaire.Modele.dll
 D:\projets\solitaire\solitaire\Solitaire.Application\bin\Debug\Transitions.dll
 D:\projets\solitaire\solitaire\Solitaire.Application\bin\Debug\Solitaire.GUI.pdb
 D:\projets\solitaire\solitaire\Solitaire.Application\bin\Debug\Solitaire.GUI.xml
-D:\projets\solitaire\solitaire\Solitaire.Application\bin\Debug\Solitaire.GUI.exe.config
 D:\projets\solitaire\solitaire\Solitaire.Application\bin\Debug\Solitaire.Modele.pdb
 D:\projets\solitaire\solitaire\Solitaire.Application\bin\Debug\Transitions.pdb
 D:\projets\solitaire\solitaire\Solitaire.Application\obj\Debug\Solitaire.Application.vbprojAssemblyReference.cache
@@ -13,3 +11,5 @@ D:\projets\solitaire\solitaire\Solitaire.Application\bin\Debug\Solitaire.exe
 D:\projets\solitaire\solitaire\Solitaire.Application\bin\Debug\Solitaire.pdb
 D:\projets\solitaire\solitaire\Solitaire.Application\obj\Debug\Solitaire.exe
 D:\projets\solitaire\solitaire\Solitaire.Application\obj\Debug\Solitaire.pdb
+D:\projets\solitaire\solitaire\Solitaire.Application\bin\Debug\Solitaire.GUI.dll
+D:\projets\solitaire\solitaire\Solitaire.Application\bin\Debug\Solitaire.GUI.dll.config

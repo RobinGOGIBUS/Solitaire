@@ -27,8 +27,8 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_3B0DE486CA184856B9054DBE0650A537"
-        "OwnerKey" = "8:_UNDEFINED"
+        "MsmKey" = "8:_413C71F01DC404D4DC1DF3A13421444B"
+        "OwnerKey" = "8:_EB3CFD5073424B3A82D68754B2CA9BE2"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -76,7 +76,7 @@
         "Entry"
         {
         "MsmKey" = "8:_BE8B49D1A6E6B942AA5A22918793BDD8"
-        "OwnerKey" = "8:_DDD44F4E0243F05D5413D52B9E85749F"
+        "OwnerKey" = "8:_413C71F01DC404D4DC1DF3A13421444B"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -105,12 +105,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_DDD44F4E0243F05D5413D52B9E85749F"
-        "OwnerKey" = "8:_3B0DE486CA184856B9054DBE0650A537"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_E14085D67484F89A59BE279A319910E4"
         "OwnerKey" = "8:_D577854857BE5F7FCC17E33ECC158195"
         "MsmSig" = "8:_UNDEFINED"
@@ -135,8 +129,14 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_EB3CFD5073424B3A82D68754B2CA9BE2"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_EDFA63A6459A0D96C4C70F7ECABA1933"
-        "OwnerKey" = "8:_DDD44F4E0243F05D5413D52B9E85749F"
+        "OwnerKey" = "8:_413C71F01DC404D4DC1DF3A13421444B"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -160,13 +160,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_3B0DE486CA184856B9054DBE0650A537"
+        "OwnerKey" = "8:_EB3CFD5073424B3A82D68754B2CA9BE2"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_DDD44F4E0243F05D5413D52B9E85749F"
+        "OwnerKey" = "8:_413C71F01DC404D4DC1DF3A13421444B"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -289,6 +289,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -305,6 +321,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
+            }
         }
     }
     "Deployable"
@@ -385,20 +417,20 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_3B0DE486CA184856B9054DBE0650A537"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_413C71F01DC404D4DC1DF3A13421444B"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Solitaire, Version=0.3.0.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:Solitaire.GUI, Version=0.3.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_3B0DE486CA184856B9054DBE0650A537"
+                    "_413C71F01DC404D4DC1DF3A13421444B"
                     {
-                    "Name" = "8:Solitaire.exe"
+                    "Name" = "8:Solitaire.GUI.DLL"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:..\\Solitaire.Application\\bin\\Release\\Solitaire.exe"
+            "SourcePath" = "8:Solitaire.GUI.DLL"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_7E58B058ABBD46E8A5F63F6AB27EEFDD"
@@ -413,7 +445,7 @@
             "PackageAs" = "3:1"
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_48527F05BD32FA1F2F0287AE73E0261A"
@@ -757,37 +789,6 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_DDD44F4E0243F05D5413D52B9E85749F"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Solitaire.GUI, Version=0.3.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_DDD44F4E0243F05D5413D52B9E85749F"
-                    {
-                    "Name" = "8:Solitaire.GUI.EXE"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:Solitaire.GUI.EXE"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_7E58B058ABBD46E8A5F63F6AB27EEFDD"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_E14085D67484F89A59BE279A319910E4"
             {
             "AssemblyRegister" = "3:1"
@@ -910,6 +911,37 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_EB3CFD5073424B3A82D68754B2CA9BE2"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Solitaire, Version=0.7.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_EB3CFD5073424B3A82D68754B2CA9BE2"
+                    {
+                    "Name" = "8:Solitaire.exe"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\Solitaire.Application\\bin\\Release\\Solitaire.exe"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_7E58B058ABBD46E8A5F63F6AB27EEFDD"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_EDFA63A6459A0D96C4C70F7ECABA1933"
@@ -1062,7 +1094,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Solitaire.Setup"
         "ProductCode" = "8:{898ECB07-6724-4E68-8A57-D74296647BE3}"
-        "PackageCode" = "8:{F110A607-6D33-4BF5-81DC-DDBE5F100C86}"
+        "PackageCode" = "8:{E3262FC9-AA79-445A-8A07-CA163991B237}"
         "UpgradeCode" = "8:{35D6B96F-A95D-4DDA-A13C-6B9EE119ACF0}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -1182,7 +1214,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_B8B9608F770B4EB99D086C1D5FE5B8AD"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_6A106BD608D742758C3C69C675B9F6F8"
             {
             "Name" = "8:Solitaire"
             "Arguments" = "8:"
@@ -1190,7 +1222,7 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_3B0DE486CA184856B9054DBE0650A537"
+            "Target" = "8:_EB3CFD5073424B3A82D68754B2CA9BE2"
             "Folder" = "8:_A9FBEF414D584BEC86ACABE6A5F21F68"
             "WorkingFolder" = "8:_7E58B058ABBD46E8A5F63F6AB27EEFDD"
             "Icon" = "8:_1FA90DD425D24F25943F4757CC0336E7"
